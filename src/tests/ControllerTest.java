@@ -15,7 +15,7 @@ public class ControllerTest {
 
 	@Test
 	public void controllerTest() {
-		Controller c = new Controller(new Dimension(20,20));
+		new Controller();
 		
 	}
 

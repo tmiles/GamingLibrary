@@ -17,9 +17,15 @@ public class ModelTest {
 
 	@Test
 	public void modelTest() {
-		Model m = new Model(new Dimension(), new Dimension());
+		Model m = Model.getInstance();
+		assertEquals(new Dimension(), m.getBlockDimension());
+		assertEquals(new Dimension(), m.getGridDimension());
 		assertEquals(null, m.getMap());
 		m.setupMap(); // creates a map
+		m.setMap(null);
+		assertEquals(null, m.getMap());
+		
 	}
+	
 
 }
