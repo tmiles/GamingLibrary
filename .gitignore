@@ -1,6 +1,7 @@
 *.class
 bin/
 docs/
+res/
 .classpath
 .project
 
